@@ -20,4 +20,8 @@ git clone git@github.com:linusX1402/nuxtStarter.git
 ````
 npm i
 ````
+start the project
+````
+npm run dev
+````
 
