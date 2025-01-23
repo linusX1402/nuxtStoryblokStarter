@@ -29,6 +29,9 @@ install [mkcert](https://github.com/FiloSottile/mkcert) on your Device
 
 replace the nuxt dev command in your package.json with:
 ````
+mkcert localhost
+````
+````
 NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem
 ````
 
