@@ -24,4 +24,23 @@ start the project
 ````
 npm run dev
 ````
+## Setup Token in .env File
+create a .env File in the root directory containing
+````
+STORYBLOK_ACCESS_TOKEN = <yourToken>
+````
+add this to your nuxt.config.ts
+````
+import dotenv from 'dotenv'
 
+dotenv.config()
+
+export default {
+...
+        accessToken: 'process.env.STORYBLOK_ACCESS_TOKEN',
+        apiOptions: {
+          region: '' // Set 'US" if your space is created in US region (EU default)
+        }
+...
+}
+````
