@@ -7,7 +7,7 @@ export default defineNuxtConfig({
         //ToDo: Replace with your own token or see README.md for further instructions
         accessToken: '<yourToken>',
         apiOptions: {
-          region: '' // Set 'US" if your space is created in US region (EU default)
+          region: '' // Set 'US' if your space is created in US region (EU default)
         }
       },
     ],

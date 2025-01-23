@@ -24,6 +24,14 @@ start the project
 ````
 npm run dev
 ````
+## Setup mkcert for local certificates
+install [mkcert](https://github.com/FiloSottile/mkcert) on your Device
+
+replace the nuxt dev command in your package.json with:
+````
+NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem
+````
+
 ## Setup Token in .env File
 create a .env File in the root directory containing
 ````
