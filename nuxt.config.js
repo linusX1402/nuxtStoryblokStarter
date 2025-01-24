@@ -1,5 +1,8 @@
 export default defineNuxtConfig({
   css: ['@/assets/css/roboto.css'],
+  typescript: {
+    typeCheck: true
+  },
   modules: [
     [
       '@storyblok/nuxt',
