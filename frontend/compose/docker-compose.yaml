@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  cts-frontend:
+    image: ghcr.io/linusx1402/cts-frontend:latest
+    environment:
+      STORYBLOK_ACCESS_TOKEN_DEP: ${NUXT_STORYBLOK_ACCESS_TOKEN_DEP}
+      EMAIL_PASSWORD: ${NUXT_EMAIL_PASSWORD}
+    ports:
+      - "3000:3000"
